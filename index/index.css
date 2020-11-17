@@ -1,0 +1,545 @@
+.home-page, .about-page, .menu-page,.delivery-page,.contact-page{
+	font-family: segoe UI;
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin:0;
+	
+}
+header{
+	
+	background-image:url(food2.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	height:100vh;
+}
+/* Div with the class nav*/
+ .nav{
+ 	padding: 0;
+ 	margin: 0;
+ 	top:0;
+	background-color:  #55d6aa;
+	width: 100%;
+	height: 60px;
+}
+.nav::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+/* logo but its replaced with resturant home page*/
+.logo{
+	float: left;
+	font-size: 15px;
+	padding: 10px;
+	padding-top: 5px;
+	
+	text-transform: uppercase;
+	color: #021428;
+}
+/* my navigation*/
+.navigation{
+	float: right;
+}
+.navigation ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li{
+	display: inline-block;
+	padding: 15px;
+	padding-top: 20px;
+}
+.navigation a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	font-weight: bold;
+	-webkit-transition:all ease-in-out 0.5s;
+	transition:all ease-in-out 0.5s;
+}
+.navigation a:hover{
+	color: #021428;
+}
+.navigation a::before{
+	content: "";
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #021428;
+	position: absolute;
+	top:0;
+	width: 0%;
+	-webkit-transition:all ease-in-out 0.5s;
+	transition:all ease-in-out 0.5s;
+}
+.navigation a:hover::before{
+	width: 4%;
+}
+a.active{
+	color: beige;
+}
+.resturant-name{
+	position: absolute;
+	top: 46%;
+	left: 29%;
+	text-transform: uppercase;
+	color: beige;
+	font-size: 40px; 	
+}
+.resturant-name2{
+	position: absolute;
+	top: 52%;
+	left: 26%;
+	color: beige;
+	font-size: 30px; 
+}
+.search{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	text-decoration: none;
+	color: beige;
+	background-color: #021428;
+	padding: 10px 30px;
+	border: 1px solid #fff;
+	-webkit-transition:all ease-in-out 0.5s;
+	transition:all ease-in-out 0.5s;
+	-webkit-box-shadow:2px 4px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow:2px 4px 8px rgba(0,0,0,0.5);
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+}
+.btn:hover{
+	background-color: beige;
+	color: #021428;
+	border: 1px solid #021428;
+	padding: 20px 40px;
+}
+
+
+/* my about page*/
+.about{
+	background-color: beige;
+	padding: 10px;
+	margin:0;
+	height:auto;
+	width:auto;
+	color: black;
+}
+.about img{
+	position: relative;
+	left: 39%;
+	height: 150px;
+	width: 250px;
+}
+.h1center{
+	font-size: 40px; 
+	position: relative;
+	top: 100px;
+	left: 23%;
+	color: beige;
+	text-transform: uppercase;
+}
+.about h1{
+	padding: 0;
+	text-align: center;
+}
+.about p{
+	text-align: center;
+}
+.about-button{
+	background-color:#fff;
+	border:1px solid #021428 ;
+	padding: 5px;
+	-webkit-transition:all ease-in-out 0.3s;
+	transition:all ease-in-out 0.3s;
+	-webkit-box-shadow:2px 4px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow:2px 4px 8px rgba(0,0,0,0.5);
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+}
+.about-button:hover{
+	background-color:#021428; 
+	color:white;
+	padding: 10px;
+	border:2px solid white;
+}
+
+
+/* my contact page*/
+
+
+
+/*menu page*/
+
+.menu-wrapper,.about-wrapper{
+	background-image:url(food9.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	height:300px;
+}
+.menu-text{
+	text-align: center;
+	color: beige;
+	text-transform: uppercase;
+}
+.menu-h2 {
+	font-size: 45px; 
+	position: relative;
+	top: 55px;
+	left: -5px;
+	text-transform: uppercase;
+}
+.menu-p{
+	font-size: 20px;
+	position: relative;
+	top: 50px;
+
+}
+.col{
+	width: 25%;
+	float: left;
+	padding-left: 10px;
+}
+.col-ul{
+	list-style: none;
+	padding-left: 0;
+	padding-top: 10px;
+	padding-right: 0;
+	margin-bottom: 0;
+	margin-right: 70px;
+}
+.col-ul li{
+	border-bottom: 2px solid #E4E4E4;
+	padding-top: 70px;
+	padding-bottom: 45px;
+	padding-right: 0;
+}
+.col-ul a{
+	text-decoration: none;
+	font-size: 17px;
+	color: brown; 
+}
+.col-ul a:hover{
+	color: #55d6aa;
+	font-size:20px;
+
+}
+.row{
+	width: 100%;
+	height: 920px;
+}
+.row-ul{
+	list-style: none;
+	padding: 100px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 140px;
+	
+}
+.row-li{
+	display: inline-block;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.row-li a{
+	text-decoration: none;
+	color: brown;
+}
+.row-li a:hover{
+	font-size: 17px;
+	color: #55d6aa;
+}
+.text1{
+	position: absolute;
+	top:490px;
+	left: 370px;
+	font-size: 15px;
+}
+.text2{
+	position: absolute;
+	left: 645px;
+	top:490px;
+	font-size: 15px;
+}
+.text3{
+	position: absolute;
+	left: 910px;
+	top:490px;
+	font-size: 15px;
+}
+.text4{
+	position: absolute;
+	left: 370px;
+	top:710px;
+	font-size: 15px;
+}
+.text5{
+	position: absolute;
+	left: 645px;
+	top:710px;
+	font-size: 15px;
+}
+.text6{
+	position: absolute;
+	left: 910px;
+	top:710px;
+	font-size: 15px;
+}
+.text7{
+	position: absolute;
+	left: 370px;
+	top:930px;
+	font-size: 15px;
+}
+.text8{
+	position: absolute;
+	left: 645px;
+	top:930px;
+	font-size: 15px;
+}
+.text9{
+	position: absolute;
+	left: 910px;
+	top:930px;
+	font-size: 15px;
+}
+.text10{
+	position: absolute;
+	left: 370px;
+	top:1150px;
+	font-size: 15px;
+}
+.text11{
+	position: absolute;
+	left: 645px;
+	top:1150px;
+	font-size: 15px;
+}
+.text12{
+	position: absolute;
+	left: 910px;
+	top:1150px;
+	font-size: 15px;
+}
+.img1{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:350px;
+	left:300px;
+	padding-left: 0;
+}
+
+.img2{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:350px;
+	left: 450px;
+	padding-left: 120px; 
+}
+.img3{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:350px;
+	left:600px;
+	padding-left: 240px;
+}
+.img4{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:570px;
+	left:300px;
+	padding-left: 0px;
+}
+.img5{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:570px;
+	left:450px;
+	padding-left:120px;
+}
+.img6{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:570px;
+	left:600px;
+	padding-left: 240px;
+}
+.img7{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:790px;
+	left:300px;
+	padding-left: 0px;
+}
+.img8{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:790px;
+	left:450px;
+	padding-left: 120px;
+}
+.img9{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:790px;
+	left:600px;
+	padding-left: 240px;
+}
+.img10{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:1010px;
+	left:300px;
+	padding-left:0px;
+}
+.img11{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:1010px;
+	left:450px;
+	padding-left: 120px;
+}
+.img12{
+	width:200px ;
+	height:150px;
+	float: left;
+	position: absolute;
+	top:1010px;
+	left:600px;
+	padding-left: 240px;
+}
+.img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover,.img7:hover,.img8:hover,.img9:hover,.img10:hover,.img11:hover,.img12:hover{
+	width:210px;
+	height:160px;
+}
+
+	
+
+
+/* my reservation page*/
+
+.reservation{
+	background-color: beige;
+	padding: 10px;
+	margin:0;
+	height:auto;
+	width:auto;
+	color: black;
+}
+
+
+
+/* my delivery page*/
+.delivery{
+	background-color: beige;
+	padding: 10px;
+	margin:0;
+	height:auto;
+	width:auto;
+	color: black;
+}
+
+
+
+
+/* my contact page*/
+
+.contact{
+	background-color: beige;
+	padding: 10px;
+	margin:0;
+	height:auto;
+	width:auto;
+	color: black;
+}
+
+
+
+
+
+/* my footer*/
+
+footer{
+	margin-top:50%;
+	margin-bottom: 0;
+	background-color:#021428;
+	width: 100%;
+	height: auto;
+	margin:auto;
+	color: #fff;
+	padding: 20px 0px;
+}
+p.footer{
+	text-align: center;
+	line-height: 8;
+}
+
+
+html { font-size:100%; }
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
